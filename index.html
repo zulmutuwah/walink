@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Link Generator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- We'll use this for styling later -->
+</head>
+<body>
+    <div class="container">
+        <h1>WhatsApp Link Generator</h1>
+        <form id="waForm">
+            <label for="phone">Nomor WhatsApp (Format: 628xxxxxxxxx):</label>
+            <input type="tel" id="phone" placeholder="Nomor WhatsApp" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" placeholder="Masukkan pesan yang akan dikirim" required></textarea>
+
+            <button type="button" id="generateBtn">Generate Link</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </form>
+
+        <div id="output" style="display: none;">
+            <h3>Link WhatsApp Anda:</h3>
+            <input type="text" id="whatsappLink" readonly>
+            <button id="copyBtn">Salin</button>
+            <div id="qrCode"></div> <!-- QR code will be generated here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript will be here -->
+</body>
+</html>
